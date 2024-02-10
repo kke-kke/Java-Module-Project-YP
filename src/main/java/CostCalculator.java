@@ -6,7 +6,7 @@ public class CostCalculator {
     public static double resultingCost;
 
     public static void addProduct(String name, double cost) {
-        if (!(cost == 0)) {
+        if (cost != 0) {
             products.add(new Product(name, cost));
             resultingCost = resultingCost + cost;
             System.out.println(String.format("Товар %s стоимостью %.2f успешно добавлен в список", name, cost));
