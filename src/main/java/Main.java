@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int people = 0;
-        String name = "";
+        int people;
+        String name;
         double cost = 0;
 
         while (true) {
@@ -27,6 +27,7 @@ public class Main {
                             if (scanner.hasNextDouble()) {
                                 cost = scanner.nextDouble();
                             } else {
+                                scanner.nextLine();
                                 System.out.println("Введены некорректные данные. Пожалуйста, введите положительное число");
                             }
 
@@ -40,6 +41,7 @@ public class Main {
                 }
 
             } else {
+                scanner.nextLine();
                 System.out.println("Введены некорректные данные. Пожалуйста, введите число");
             }
         }
