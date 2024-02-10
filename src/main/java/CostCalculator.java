@@ -30,7 +30,7 @@ public class CostCalculator {
 
     protected static String outputFormat(double cost) {
         String format = "";
-        int num = (int) Math.floor(cost) % 10;
+        int num = (int) Math.floor(cost) % 100;
         switch (num) {
             case 1:
                 format = String.format("%.2f рубль", cost);
